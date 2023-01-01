@@ -1,6 +1,8 @@
 import Container from '@components/container/Container'
 import TitleHeading from '@components/titleHeading/TitleHeading'
 import styles from './intro.module.css'
+import { introText, introSkills } from '@lib/introduction'
+import IntroCard from './IntroCard'
 
 const Intro = () => {
   return (
@@ -10,19 +12,14 @@ const Intro = () => {
         <div className={styles.introWrapper}>
           <div className={styles.introText}>
             <p className={styles.introHeading}>Hello! I&#39;m Jesse Ajioh.</p>
-            <p>
-              As a web developer with over a year of experience, I am passionate
-              about creating intuitive and engaging user experiences. I am
-              proficient in Javascript and have a solid understanding of web
-              development principles.
-            </p>
+            <p>{introText.firstParagraph}</p>
+            <p>{introText.secondParagraph}</p>
+          </div>
 
-            <p>
-              In addition to my technical skills, I have copywriting experience
-              and can bring a unique perspective to any design process. I am
-              always looking for new ways to improve and grow as a developer,
-              and i am eager to take on new challenges and projects.
-            </p>
+          <div className={styles.introCards}>
+            {introSkills.map((skill, i) => (
+              <IntroCard key={i} skill={skill} />
+            ))}
           </div>
         </div>
       </Container>

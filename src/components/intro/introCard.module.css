@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--clr-bg-card);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-dark-right);
+  display: grid;
+  gap: 1rem;
+  transition: all 400ms ease;
+}
+
+.card:nth-last-of-type(even) {
+  box-shadow: var(--shadow-dark-left);
+}
+
+.heading {
+  font-family: var(--title-heading-family);
+  font-size: var(--title-heading-size);
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+  background-clip: text;
+  color: transparent;
+}
+:nth-last-of-type(even) .card:hover {
+  box-shadow: var(--shadow-color-right);
+}
+
+.card:nth-last-of-type(even):hover {
+  box-shadow: var(--shadow-color-left);
+}
+
+.text {
+  color: var(--clr-text-muted);
+}

@@ -1,0 +1,9 @@
+.projects {
+  padding-block: var(--spacing);
+}
+
+.projectsWrapper {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+}

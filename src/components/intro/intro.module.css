@@ -5,6 +5,8 @@
 
 .introWrapper {
   margin-top: var(--spacing);
+  display: grid;
+  gap: 2rem;
 }
 
 .introText {
@@ -16,4 +18,9 @@
   font-size: var(--intro-heading-size);
   font-weight: var(--intro-heading-weight);
   font-family: var(--intro-heading-family);
+}
+
+.introCards {
+  display: grid;
+  gap: 2rem;
 }

@@ -33,7 +33,7 @@
 }
 
 .cta:hover {
-  box-shadow: var(--shadow-color);
+  box-shadow: var(--shadow-color-right);
 }
 
 .cta:active {

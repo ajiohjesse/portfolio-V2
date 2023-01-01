@@ -1,5 +1,6 @@
 .heading {
   display: flex;
+  width: max-content;
   gap: 10px;
   flex-direction: column;
   font-weight: var(--title-heading-weight);

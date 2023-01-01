@@ -1,0 +1,61 @@
+.tools {
+  padding-block: var(--spacing);
+}
+
+.toolImages {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.toolImg {
+  width: 100%;
+  max-width: 200px;
+  height: fit-content;
+  position: relative;
+}
+
+.mainStack {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+}
+
+.html {
+  top: -40%;
+  left: 30%;
+}
+
+.css {
+  top: -40%;
+  right: 30%;
+}
+
+.js {
+  z-index: 1;
+}
+
+.subStack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.frameworks,
+.backend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.next {
+  top: 40%;
+  right: 20%;
+  z-index: -1;
+}
+
+.mongo {
+  top: 40%;
+  left: 20%;
+}

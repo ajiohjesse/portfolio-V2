@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--clr-bg-card);
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.image {
+  height: 200px;
+  object-fit: cover;
+  border: 20px solid rgb(133, 139, 148);
+}
+
+.text {
+  display: grid;
+  gap: 1rem;
+}
+
+.text > h3 {
+  font-family: var(--title-heading-family);
+  font-size: var(--title-heading-size);
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.links {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+}

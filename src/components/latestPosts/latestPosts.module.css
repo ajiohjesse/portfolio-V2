@@ -1,0 +1,10 @@
+.latestPosts {
+  background-color: var(--clr-bg-secondary);
+  padding-block: var(--spacing);
+}
+
+.wrapper {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+}
