@@ -1,0 +1,17 @@
+.heading {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  font-weight: var(--title-heading-weight);
+  font-family: var(--title-heading-family);
+  font-size: var(--title-heading-size);
+}
+
+.heading::after {
+  content: "";
+  height: 2px;
+  width: 20%;
+  z-index: 1;
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+}

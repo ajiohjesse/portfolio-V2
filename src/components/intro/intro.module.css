@@ -1,0 +1,19 @@
+.intro {
+  background-color: var(--clr-bg-secondary);
+  padding-block: var(--spacing);
+}
+
+.introWrapper {
+  margin-top: var(--spacing);
+}
+
+.introText {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.introHeading {
+  font-size: var(--intro-heading-size);
+  font-weight: var(--intro-heading-weight);
+  font-family: var(--intro-heading-family);
+}

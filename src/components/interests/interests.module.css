@@ -1,0 +1,12 @@
+.intro {
+  padding-block: var(--spacing);
+  background-color: var(--clr-bg-secondary);
+}
+
+.cardWrapper {
+  margin-top: var(--spacing);
+  display: grid;
+  gap: 2rem;
+}
+
+

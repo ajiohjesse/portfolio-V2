@@ -1,0 +1,26 @@
+.card {
+  background-color: var(--clr-bg-card);
+  padding: 2rem;
+  width: calc(100% - 34px);
+  display: grid;
+  gap: 2rem;
+  box-shadow: var(--shadow-dark-right);
+}
+
+.card:nth-of-type(even) {
+  justify-self: right;
+  box-shadow: var(--shadow-dark-left);
+}
+
+.title {
+  font-weight: var(--title-font-weight);
+  font-size: var(--title-font-size);
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.card > p {
+  color: var(--clr-text-muted);
+}
