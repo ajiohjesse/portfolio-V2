@@ -1,11 +1,10 @@
 import Container from '@components/container/Container'
-import Section from '@components/Section'
 import Image from 'next/image'
 import styles from './header.module.css'
 import logo from '@public/svg/JALogo.svg'
 import Link from 'next/link'
 import { cl } from '@lib/classNames'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)

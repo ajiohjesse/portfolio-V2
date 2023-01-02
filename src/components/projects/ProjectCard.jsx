@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FiGithub, FiLink } from 'react-icons/fi'
 import styles from './projectCard.module.css'
 
 const ProjectCard = ({ project }) => {
@@ -10,8 +11,12 @@ const ProjectCard = ({ project }) => {
         <h3>{title}</h3>
         <p>{text}</p>
         <div className={styles.links}>
-          <a href="/">github</a>
-          <a href="/">web</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            <FiGithub />
+          </a>
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            <FiLink />
+          </a>
         </div>
       </div>
     </article>

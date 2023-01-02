@@ -1,3 +1,5 @@
+@import url("../../../styles/animations.css");
+
 .tools {
   padding-block: var(--spacing);
 }

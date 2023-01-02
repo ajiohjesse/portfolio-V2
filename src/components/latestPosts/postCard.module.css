@@ -16,10 +16,16 @@
 }
 
 .metadata {
-  font-size: 0.8rem;
-  display: flex;
+  display: grid;
+  font-size: 0.7rem;
   gap: 10px;
   color: var(--clr-text-muted);
+}
+
+.metadata > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .link {

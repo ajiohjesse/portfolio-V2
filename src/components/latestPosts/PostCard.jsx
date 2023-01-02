@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './postCard.module.css'
+import { FiCalendar, FiClock } from 'react-icons/fi'
 
 const PostCard = ({ post }) => {
   const { title, text } = post
@@ -7,9 +8,14 @@ const PostCard = ({ post }) => {
     <article className={styles.card}>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.metadata}>
-        <p>Published 3days ago</p>
-        <p> | </p>
-        <p>5min read</p>
+        <div>
+          <FiCalendar />
+          <p>Published 3 days ago</p>
+        </div>
+        <div>
+          <FiClock />
+          <p>5min read</p>
+        </div>
       </div>
       <p className={styles.text}>{text}</p>
       <Link href="/" className={styles.link}>

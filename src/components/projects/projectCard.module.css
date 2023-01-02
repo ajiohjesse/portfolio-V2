@@ -31,3 +31,20 @@
   justify-content: right;
   gap: 1rem;
 }
+
+.links > a {
+  color: var(--clr-link);
+  border: 2px dotted;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 300ms ease;
+}
+
+.links > a:hover {
+  scale: 1.1;
+  background-color: var(--clr-bg-primary);
+}
+
+.links > a:active {
+  scale: 0.9;
+}
