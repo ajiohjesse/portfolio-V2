@@ -1,0 +1,79 @@
+.contact {
+  padding-block: var(--spacing);
+  display: grid;
+  gap: 4rem;
+}
+
+.form {
+  margin-top: 3rem;
+  background-color: var(--clr-bg-card);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  display: grid;
+  gap: 2rem;
+  box-shadow: var(--shadow-color-right);
+}
+
+.inputGroup {
+  display: grid;
+  gap: 15px;
+}
+
+.inputGroup > label {
+  font-size: 1rem;
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+  background-clip: text;
+  color: transparent;
+  font-family: var(--title-heading-family);
+}
+
+.inputGroup > input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--clr-text-muted);
+}
+
+.inputGroup > textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--clr-text-muted);
+}
+
+.inputGroup > :is(input, textarea) {
+  color: var(--clr-text);
+  transition: all 300ms ease;
+}
+
+.inputGroup > :is(input:focus, textarea:focus) {
+  outline: none;
+  border-color: var(--clr-primary);
+}
+
+.form > button {
+  border: none;
+  height: 60px;
+  border-radius: var(--border-radius);
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+  color: var(--clr-text);
+  transition: all 300ms ease;
+}
+
+.form > button:hover {
+  box-shadow: var(--shadow-color-right);
+}
+
+.form > button:active {
+  scale: 0.9;
+}
+
+.pattern {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}

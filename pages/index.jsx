@@ -1,5 +1,4 @@
-import Container from '@components/container/Container'
-import Header from '@components/header/Header'
+import Contact from '@components/contact/Contact'
 import Hero from '@components/hero/Hero'
 import Interests from '@components/interests/Interests'
 import Intro from '@components/intro/Intro'
@@ -21,6 +20,7 @@ export default function Home() {
           <Interests />
           <Projects />
           <LatestPosts />
+          <Contact/>
         </main>
       </Layout>
     </>
