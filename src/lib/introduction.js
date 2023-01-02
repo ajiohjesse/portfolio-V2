@@ -17,7 +17,7 @@ export const introSkills = [
   },
   {
     title: 'Front-end',
-    text: `Bilding web apllications with the latest tools.`,
+    text: `Building web applications with the latest tools.`,
   },
   {
     title: 'SEO',

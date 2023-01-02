@@ -4,6 +4,11 @@
   border-radius: var(--border-radius);
   display: grid;
   gap: 1rem;
+  box-shadow: var(--shadow-dark-right);
+}
+
+.card:nth-of-type(even) {
+  box-shadow: var(--shadow-dark-left);
 }
 
 .title {
