@@ -36,9 +36,9 @@
 }
 
 .inputGroup > textarea {
-  resize: none;
+  resize: vertical;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--clr-text-muted);
@@ -47,6 +47,8 @@
 .inputGroup > :is(input, textarea) {
   color: var(--clr-text);
   transition: all 300ms ease;
+  background-color: transparent;
+  padding: 10px;
 }
 
 .inputGroup > :is(input:focus, textarea:focus) {

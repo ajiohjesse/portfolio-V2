@@ -1,0 +1,19 @@
+.footer {
+  padding-block: 20px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper > p {
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+  text-align: center;
+}
+
+.wrapper > p > svg {
+  display: inline;
+  color: var(--clr-primary);
+}
