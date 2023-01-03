@@ -6,16 +6,26 @@ import styles from './projectCard.module.css'
 const ProjectCard = ({ project }) => {
   const { title, image, text, githubLink, webLink } = project
   return (
-    <article className={cl(styles.card, 'scale')}>
+    <article className={styles.card}>
       <Image src={image} className={styles.image} alt={title} />
       <div className={styles.text}>
-        <h3>{title}</h3>
-        <p>{text}</p>
+        <h3 className="swing">{title}</h3>
+        <p className="scale">{text}</p>
         <div className={styles.links}>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a
+            className="slide-left"
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiGithub />
           </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer">
+          <a
+            className="slide-right"
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiLink />
           </a>
         </div>

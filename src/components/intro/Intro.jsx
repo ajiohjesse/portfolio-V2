@@ -12,7 +12,7 @@ const Intro = () => {
         <TitleHeading>Introduction</TitleHeading>
         <div className={styles.introWrapper}>
           <div className={styles.introText}>
-            <p className={cl(styles.introHeading, 'swing')}>
+            <p className={cl(styles.introHeading, 'scale')}>
               Hello! I&#39;m Jesse Ajioh.
             </p>
             <p className="scale">{introText.firstParagraph}</p>

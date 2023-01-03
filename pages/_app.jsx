@@ -5,7 +5,6 @@ import '@styles/scrollAnimations.css'
 export default function App({ Component, pageProps }) {
   useScrollAnimate('swing', 'swing-in')
   useScrollAnimate('scale', 'scale-in')
-  useScrollAnimate('track', 'track-in')
   useScrollAnimate('slide-left', 'slide-left-in')
   useScrollAnimate('slide-right', 'slide-right-in')
 

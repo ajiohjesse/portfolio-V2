@@ -6,7 +6,7 @@
 
 .scale {
   opacity: 0;
-  transform: scale(0.8);
+  transform: scale(0.9);
   transition: var(--transition);
 }
 
@@ -16,8 +16,8 @@
 }
 
 .swing {
-  -webkit-transform: rotateY(50deg);
-  transform: rotateY(50deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
   -webkit-transform-origin: left;
   transform-origin: left;
   opacity: 0;
@@ -25,15 +25,15 @@
 }
 
 .swing-in {
-  -webkit-transform: rotateY(0);
-  transform: rotateY(0);
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
   -webkit-transform-origin: left;
   transform-origin: left;
   opacity: 1;
 }
 
 .slide-left {
-  transform: translateX(-50%);
+  transform: translateX(-25%);
   transition: transform var(--transition);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .slide-right {
-  transform: translateX(50%);
+  transform: translateX(25%);
   transition: transform var(--transition);
 }
 

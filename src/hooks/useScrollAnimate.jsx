@@ -20,9 +20,9 @@ const useScrollAnimate = (className, intro) => {
     animated.forEach((card) => {
       observer.observe(card)
     })
-  }, [])
 
-  return null
+    return () => observer.disconnect()
+  }, [])
 }
 
 export default useScrollAnimate
