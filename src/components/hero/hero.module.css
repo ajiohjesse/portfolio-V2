@@ -46,7 +46,8 @@
 
 .heroImg {
   height: 250px;
-  width: auto;
+  width: 250px;
+  margin: 0 auto;
 }
 
 .experience {

@@ -20,6 +20,18 @@
   box-shadow: var(--shadow-color-left);
 }
 
+.headingWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headingWrapper > svg {
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
 .heading {
   font-family: var(--title-heading-family);
   font-size: var(--title-heading-size);

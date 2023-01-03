@@ -26,6 +26,7 @@
   background-clip: text;
   color: transparent;
   font-family: var(--title-heading-family);
+  font-weight: 700;
 }
 
 .inputGroup > input {

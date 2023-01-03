@@ -1,6 +1,6 @@
 import Container from '@components/container/Container'
 import styles from './hero.module.css'
-import heroImg from '@public/svg/hero-img.svg'
+import heroImg from '@public/images/hero-img.png'
 import Image from 'next/image'
 import { cl } from '@lib/classNames'
 

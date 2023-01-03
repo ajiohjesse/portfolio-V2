@@ -8,7 +8,8 @@ const IntroCard = ({ skill }) => {
   return (
     <article className={cl(styles.card, 'scale')}>
       <div className={styles.headingWrapper}>
-        {icon} <h3 className={styles.heading}>{title}</h3>
+        <h3 className={styles.heading}>{title}</h3>
+        {icon}
       </div>
       <p className={styles.text}>{text}</p>
     </article>
