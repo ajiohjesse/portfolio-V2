@@ -16,9 +16,9 @@ function SEO({ description = '', title, ogImage, canonicalPath }) {
 
   const ogImageAlt = ogImage
     ? 'Banner for site, showing page title in a creative way'
-    : 'Banner for site, featuring a word map and a cute 3D avatar'
+    : 'Banner for site, featuring and a cute 3D avatar'
 
-  const actualOgImage = PROD_URL + (ogImage || '/images/og-default.png')
+  const actualOgImage = PROD_URL + (ogImage || '/images/banner.jpg')
 
   return (
     <Head>

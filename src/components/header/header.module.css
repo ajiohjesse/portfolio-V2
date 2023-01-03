@@ -93,3 +93,22 @@
 .link:hover::after {
   width: 100%;
 }
+
+@media (min-width: 600px) {
+  .menuBtn {
+    display: none;
+  }
+
+  .nav {
+    all: unset;
+  }
+
+  .linkList {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+}
