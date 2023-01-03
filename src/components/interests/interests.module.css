@@ -4,7 +4,7 @@
 }
 
 .cardWrapper {
-  margin-top: var(--spacing);
+  margin-top: 3rem;
   display: grid;
   gap: 2rem;
 }
@@ -21,12 +21,9 @@
   }
 }
 
-
 @media (min-width: 767px) {
   .cardWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-items: center; */
-    /* gap: 2rem; */
   }
 }

@@ -7,7 +7,7 @@ export const projects = [
     title: 'Venndor - The Online Marketplace',
     text: `Venndor is an online marketplace built with
     Next.js and Hygraph. It incoporates an authentication
-    layer and allows users to sign-up and create stores 
+    layer and allows users create stores 
     and showcase their products`,
   },
   {

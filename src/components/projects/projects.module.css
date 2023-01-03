@@ -7,3 +7,16 @@
   display: grid;
   gap: 3rem;
 }
+
+@media (min-width: 767px) {
+  .projectsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectsWrapper {
+    gap: 3rem;
+  }
+}

@@ -6,13 +6,13 @@
 
 .toolImages {
   margin-top: min(calc(100vw / 4), 10rem);
-  margin-bottom: calc(100vw / 8);
+  margin-bottom: min(calc(100vw / 8), 10rem);
   position: relative;
 }
 
 .toolImg {
   width: 100%;
-  max-width: 200px;
+  max-width: 120px;
   height: fit-content;
   position: relative;
 }

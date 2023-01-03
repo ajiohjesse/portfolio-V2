@@ -16,6 +16,18 @@ const posts = [
      adipisicing elit. Officia, deleniti exercitationem
       consequuntur quaerat cum, soluta dolore omnis...`,
   },
+  {
+    title: 'Introduction to web developement',
+    text: `Lorem ipsum, dolor sit amet consectetur
+     adipisicing elit. Officia, deleniti exercitationem
+      consequuntur quaerat cum...`,
+  },
+  {
+    title: 'Getting started with next.js',
+    text: `Lorem ipsum, dolor sit amet consectetur
+     adipisicing elit. Officia, deleniti exercitationem
+      consequuntur quaerat cum, soluta dolore omnis...`,
+  },
 ]
 
 const LatestPosts = () => {

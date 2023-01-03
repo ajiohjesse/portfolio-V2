@@ -8,8 +8,14 @@ const Contact = () => {
   return (
     <section className={styles.contact}>
       <Container>
+        <TitleHeading>Send a Message</TitleHeading>
+
         <div className={styles.wrapper}>
-          <TitleHeading>Send a Message</TitleHeading>
+          <Image
+            src={pattern}
+            alt="Blue patterned decoration"
+            className={styles.pattern}
+          />
 
           <form className={styles.form}>
             <div className={styles.inputGroup}>
@@ -45,11 +51,6 @@ const Contact = () => {
           </form>
         </div>
       </Container>
-      <Image
-        src={pattern}
-        alt="Blue patterned decoration"
-        className={styles.pattern}
-      />
     </section>
   )
 }

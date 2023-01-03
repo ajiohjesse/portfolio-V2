@@ -24,8 +24,8 @@
 }
 
 .title > h3 {
-  font-weight: var(--title-font-weight);
-  font-size: var(--title-font-size);
+  font-weight: var(--title-heading-weight);
+  font-size: var(--title-heading-size);
   background: var(--clr-primary);
   background: var(--clr-primary-gradient);
   background-clip: text;

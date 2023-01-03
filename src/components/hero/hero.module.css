@@ -4,6 +4,7 @@
 
 .heroWrapper {
   display: flex;
+  gap: 2rem;
   flex-direction: column-reverse;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .cta {
-  height: 60px;
+  height: 70px;
   padding-inline: 1rem;
   display: grid;
   place-items: center;
@@ -91,11 +92,12 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    gap: 0;
   }
 
   .mainHeading {
     text-align: left;
-    font-size: min(calc(100vw / 16), 4rem);
+    font-size: min(calc(100vw / 16), 3.5rem);
   }
 
   .heroImg {

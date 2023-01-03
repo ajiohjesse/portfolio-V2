@@ -4,15 +4,14 @@
   display: grid;
   gap: 2rem;
   border-radius: var(--border-radius);
-  box-shadow: var(--shadow-color-right);
+  box-shadow: var(--shadow-dark-right);
 }
 
 .card:nth-of-type(even) {
-  box-shadow: var(--shadow-color-left);
+  box-shadow: var(--shadow-dark-left);
 }
 
 .image {
-  /* height: 200px; */
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -21,11 +20,11 @@
 .text {
   display: grid;
   gap: 1.5rem;
+  align-content: space-evenly;
 }
 
 .text > h3 {
   font-family: var(--title-heading-family);
-  font-size: var(--title-heading-size);
   background: var(--clr-primary);
   background: var(--clr-primary-gradient);
   background-clip: text;

@@ -13,7 +13,6 @@
 
 .title {
   font-family: var(--title-heading-family);
-  font-size: var(--title-heading-size);
   background: var(--clr-primary);
   background: var(--clr-primary-gradient);
   background-clip: text;
