@@ -181,10 +181,17 @@ button {
   background-clip: padding-box;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   :root {
-    --main-heading-size: 4.444rem;
+    /* --main-heading-size: 4.444rem; */
     --title-heading-size: 1.778rem;
     --intro-heading-size: 3.556rem;
   }
 }
+
+@media (min-width: 767px) {
+  :root {
+    --spacing: 100px;
+  }
+}
+

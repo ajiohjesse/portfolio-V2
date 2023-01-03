@@ -33,6 +33,6 @@ export const interests = [
     text: `I am interested in clearly and accurately 
     communicating technical information to a variety
     of audiences, including clients, team members and
-    end users of products that i build.`,
+    end users of products that I build.`,
   },
 ]

@@ -5,8 +5,8 @@
 }
 
 .toolImages {
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-top: min(calc(100vw / 4), 10rem);
+  margin-bottom: calc(100vw / 8);
   position: relative;
 }
 

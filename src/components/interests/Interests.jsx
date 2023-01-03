@@ -6,17 +6,17 @@ import { interests } from '@lib/Interests'
 
 const Interests = () => {
   return (
-    <section className={styles.intro}>
+    <section className={styles.interests}>
       <Container>
-        <div className={styles.introWrapper}>
-          <TitleHeading>Im Interested In</TitleHeading>
-        </div>
+        <TitleHeading>Im Interested In</TitleHeading>
       </Container>
 
-      <div className={styles.cardWrapper}>
-        {interests.map((interest, i) => (
-          <InterestCard interest={interest} key={i} />
-        ))}
+      <div className={styles.cardContainer}>
+        <div className={styles.cardWrapper}>
+          {interests.map((interest, i) => (
+            <InterestCard interest={interest} key={i} />
+          ))}
+        </div>
       </div>
     </section>
   )

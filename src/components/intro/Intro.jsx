@@ -11,18 +11,18 @@ const Intro = () => {
       <Container>
         <TitleHeading>Introduction</TitleHeading>
         <div className={styles.introWrapper}>
+          <div className={styles.introCards}>
+            {introSkills.map((skill, i) => (
+              <IntroCard key={i} skill={skill} />
+            ))}
+          </div>
+
           <div className={styles.introText}>
             <p className={cl(styles.introHeading, 'scale')}>
               Hello! I&#39;m Jesse Ajioh.
             </p>
             <p className="scale">{introText.firstParagraph}</p>
             <p className="scale">{introText.secondParagraph}</p>
-          </div>
-
-          <div className={styles.introCards}>
-            {introSkills.map((skill, i) => (
-              <IntroCard key={i} skill={skill} />
-            ))}
           </div>
         </div>
       </Container>
