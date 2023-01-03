@@ -6,7 +6,7 @@ const IntroCard = ({ skill }) => {
   const { title, text, icon } = skill
 
   return (
-    <article className={cl(styles.card, 'swing')}>
+    <article className={cl(styles.card, 'scale')}>
       <div className={styles.headingWrapper}>
         {icon} <h3 className={styles.heading}>{title}</h3>
       </div>

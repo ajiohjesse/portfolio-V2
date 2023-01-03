@@ -15,7 +15,7 @@
 .mainHeading {
   font-size: var(--main-heading-size);
   font-weight: var(--main-heading-weight);
-  /* text-align: center; */
+  text-align: center;
   line-height: 1.4;
 }
 

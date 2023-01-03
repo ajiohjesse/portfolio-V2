@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
     <article className={styles.card}>
       <Image src={image} className={styles.image} alt={title} />
       <div className={styles.text}>
-        <h3 className="swing">{title}</h3>
+        <h3 className="scale">{title}</h3>
         <p className="scale">{text}</p>
         <div className={styles.links}>
           <a
