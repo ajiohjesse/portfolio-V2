@@ -23,17 +23,17 @@ const Tools = () => {
             <div className={styles.mainStack}>
               <Image
                 src={html}
-                className={cl(styles.toolImg, styles.html)}
+                className={cl(styles.toolImg, styles.html, 'slide-left')}
                 alt="html"
               />
               <Image
                 src={js}
-                className={cl(styles.toolImg, styles.js)}
+                className={cl(styles.toolImg, styles.js, 'scale')}
                 alt="javascript"
               />
               <Image
                 src={css}
-                className={cl(styles.toolImg, styles.css)}
+                className={cl(styles.toolImg, styles.css, 'slide-right')}
                 alt="css"
               />
             </div>
@@ -41,24 +41,24 @@ const Tools = () => {
               <div className={styles.frameworks}>
                 <Image
                   src={react}
-                  className={cl(styles.toolImg, styles.react)}
+                  className={cl(styles.toolImg, styles.react, 'slide-left')}
                   alt="react JS"
                 />
                 <Image
                   src={next}
-                  className={cl(styles.toolImg, styles.next)}
+                  className={cl(styles.toolImg, styles.next, 'slide-right')}
                   alt="next JS"
                 />
               </div>
               <div className={styles.backend}>
                 <Image
                   src={mongo}
-                  className={cl(styles.toolImg, styles.mongo)}
+                  className={cl(styles.toolImg, styles.mongo, 'slide-left')}
                   alt="mongo DB"
                 />
                 <Image
                   src={node}
-                  className={cl(styles.toolImg, styles.node)}
+                  className={cl(styles.toolImg, styles.node, 'slide-right')}
                   alt="node JS"
                 />
               </div>

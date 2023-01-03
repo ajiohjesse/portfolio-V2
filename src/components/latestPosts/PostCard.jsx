@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import styles from './postCard.module.css'
 import { FiCalendar, FiClock } from 'react-icons/fi'
+import { cl } from '@lib/classNames'
 
 const PostCard = ({ post }) => {
   const { title, text } = post
   return (
-    <article className={styles.card}>
+    <article className={cl(styles.card, 'scale')}>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.metadata}>
         <div>

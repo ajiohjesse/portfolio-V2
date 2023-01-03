@@ -1,3 +1,4 @@
+import { cl } from '@lib/classNames'
 import Image from 'next/image'
 import { FiGithub, FiLink } from 'react-icons/fi'
 import styles from './projectCard.module.css'
@@ -5,7 +6,7 @@ import styles from './projectCard.module.css'
 const ProjectCard = ({ project }) => {
   const { title, image, text, githubLink, webLink } = project
   return (
-    <article className={styles.card}>
+    <article className={cl(styles.card, 'scale')}>
       <Image src={image} className={styles.image} alt={title} />
       <div className={styles.text}>
         <h3>{title}</h3>

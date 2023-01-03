@@ -13,11 +13,15 @@ const Contact = () => {
 
           <form className={styles.form}>
             <div className={styles.inputGroup}>
-              <label htmlFor="name">Your Name:</label>
+              <label htmlFor="name" className="swing">
+                Your Name:
+              </label>
               <input type="text" name="name" id="name" placeholder="Jon Snow" />
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="email">Your Email:</label>
+              <label htmlFor="email" className="swing">
+                Your Email:
+              </label>
               <input
                 type="email"
                 name="email"
@@ -26,14 +30,18 @@ const Contact = () => {
               />
             </div>
             <div className={styles.inputGroup}>
-              <label htmlFor="message">Message:</label>
+              <label htmlFor="message" className="swing">
+                Message:
+              </label>
               <textarea
                 name="message"
                 id="messageW"
                 placeholder="Type your message..."
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" className="scale">
+              Send Message
+            </button>
           </form>
         </div>
       </Container>

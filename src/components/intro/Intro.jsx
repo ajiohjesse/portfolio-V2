@@ -3,6 +3,7 @@ import TitleHeading from '@components/titleHeading/TitleHeading'
 import styles from './intro.module.css'
 import { introText, introSkills } from '@lib/introduction'
 import IntroCard from './IntroCard'
+import { cl } from '@lib/classNames'
 
 const Intro = () => {
   return (
@@ -11,9 +12,11 @@ const Intro = () => {
         <TitleHeading>Introduction</TitleHeading>
         <div className={styles.introWrapper}>
           <div className={styles.introText}>
-            <p className={styles.introHeading}>Hello! I&#39;m Jesse Ajioh.</p>
-            <p>{introText.firstParagraph}</p>
-            <p>{introText.secondParagraph}</p>
+            <p className={cl(styles.introHeading, 'swing')}>
+              Hello! I&#39;m Jesse Ajioh.
+            </p>
+            <p className="scale">{introText.firstParagraph}</p>
+            <p className="scale">{introText.secondParagraph}</p>
           </div>
 
           <div className={styles.introCards}>

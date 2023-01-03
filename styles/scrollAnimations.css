@@ -1,0 +1,51 @@
+:root {
+  --transition: 600ms ease !important;
+
+  /* cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+}
+
+.scale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: var(--transition);
+}
+
+.scale-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.swing {
+  -webkit-transform: rotateY(50deg);
+  transform: rotateY(50deg);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  opacity: 0;
+  transition: transform var(--transition);
+}
+
+.swing-in {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  opacity: 1;
+}
+
+.slide-left {
+  transform: translateX(-50%);
+  transition: transform var(--transition);
+}
+
+.slide-left-in {
+  transform: translateX(0);
+}
+
+.slide-right {
+  transform: translateX(50%);
+  transition: transform var(--transition);
+}
+
+.slide-right-in {
+  transform: translateX(0);
+}

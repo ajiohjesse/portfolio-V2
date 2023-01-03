@@ -8,8 +8,16 @@
   transition: all 400ms ease;
 }
 
-.card:nth-last-of-type(even) {
+.card:nth-of-type(even) {
   box-shadow: var(--shadow-dark-left);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-color-right);
+}
+
+.card:nth-last-of-type(even):hover {
+  box-shadow: var(--shadow-color-left);
 }
 
 .heading {
@@ -19,13 +27,6 @@
   background: var(--clr-primary-gradient);
   background-clip: text;
   color: transparent;
-}
-:nth-last-of-type(even) .card:hover {
-  box-shadow: var(--shadow-color-right);
-}
-
-.card:nth-last-of-type(even):hover {
-  box-shadow: var(--shadow-color-left);
 }
 
 .text {

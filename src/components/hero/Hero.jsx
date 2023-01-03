@@ -2,6 +2,7 @@ import Container from '@components/container/Container'
 import styles from './hero.module.css'
 import heroImg from '@public/svg/hero-img.svg'
 import Image from 'next/image'
+import { cl } from '@lib/classNames'
 
 const Hero = () => {
   return (
@@ -10,12 +11,12 @@ const Hero = () => {
         <div className={styles.heroWrapper}>
           <div className={styles.heroText}>
             <h1 className={styles.mainHeading}>
-              <span>Front-end</span>
-              <span>developer</span>
-              <span>&#38; UI designer</span>
+              <span className="scale">Front-end</span>
+              <span className="scale">developer</span>
+              <span className="scale">&#38; UI designer</span>
             </h1>
 
-            <button className={styles.cta}>Contact Me</button>
+            <button className={cl(styles.cta, 'scale')}>Contact Me</button>
           </div>
 
           <Image
@@ -26,7 +27,7 @@ const Hero = () => {
           />
         </div>
         <div className={styles.experience}>
-          <div className={styles.card}>
+          <div className={cl(styles.card, 'slide-left')}>
             <p>
               <span className={styles.number}>
                 1<span className={styles.primary}>&#43;</span>
@@ -38,7 +39,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className={styles.card}>
+          <div className={cl(styles.card, 'slide-right')}>
             <p>
               <span className={styles.number}>
                 10<span className={styles.primary}>&#43;</span>
