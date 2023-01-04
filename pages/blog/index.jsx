@@ -6,8 +6,8 @@ import PostCard from '@components/latestPosts/PostCard'
 import { posts } from '@components/latestPosts/LatestPosts'
 import useScrollAnimate from '@hooks/useScrollAnimate'
 import TitleHeading from '@components/titleHeading/TitleHeading'
-import BlogBanner from '@components/blogBanner/blogBanner'
-import BlogSearch from 'src/blogSearch/BlogSearch'
+import BlogBanner from '@components/blogBanner/BlogBanner'
+import BlogSearch from '@components/blogSearch/BlogSearch'
 
 const Blog = () => {
   useScrollAnimate('scale', 'scale-in')
