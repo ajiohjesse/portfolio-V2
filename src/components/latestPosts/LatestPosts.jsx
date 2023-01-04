@@ -3,7 +3,7 @@ import TitleHeading from '@components/titleHeading/TitleHeading'
 import styles from './latestPosts.module.css'
 import PostCard from './PostCard'
 
-const posts = [
+export const posts = [
   {
     title: 'Introduction to web developement',
     text: `Lorem ipsum, dolor sit amet consectetur

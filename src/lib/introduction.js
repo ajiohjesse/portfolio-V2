@@ -31,3 +31,12 @@ export const introSkills = [
     text: `Search Engine Optimization for more coverage and visibility.`,
   },
 ]
+
+export const blogIntro = {
+  firstParagraph: `Welcome to my blog! Here you will find tips, 
+  tricks, and tutorials on all things related to creating beautiful and 
+  intuitive user experiences on the web.`,
+  secondParagraph: `From HTML and CSS to JavaScript 
+  and responsive design, I'm here to share my experience and hopefully 
+  inspire you to level up your front-end skills and create standout web projects!`,
+}

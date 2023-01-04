@@ -57,7 +57,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/blog"
                   className={getActiveLinkClass('/blog')}
                   onClick={() => setMenuOpen(false)}
                 >
