@@ -27,6 +27,7 @@ const BlogBanner = () => {
               className={cl(styles.img, 'scale')}
               fill
               priority
+              placeholder="blur"
             />
           </div>
         </div>

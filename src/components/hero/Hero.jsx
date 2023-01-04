@@ -3,7 +3,6 @@ import styles from './hero.module.css'
 import heroImg from '@public/images/hero-img.png'
 import Image from 'next/image'
 import { cl } from '@utils/classNames'
-import useScrollAnimate from '@hooks/useScrollAnimate'
 
 const Hero = () => {
   return (
@@ -25,6 +24,7 @@ const Hero = () => {
             src={heroImg}
             className={cl(styles.heroImg, 'scale')}
             alt="3d Illustration of a guy holding a laptop."
+            placeholder="blur"
           />
         </div>
         <div className={styles.experience}>

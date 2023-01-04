@@ -63,6 +63,7 @@ const Contact = () => {
             src={pattern}
             alt="Patterned decoration"
             className={styles.pattern}
+            placeholder="blur"
           />
 
           <form
