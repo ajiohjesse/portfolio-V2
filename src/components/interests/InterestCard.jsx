@@ -1,4 +1,4 @@
-import { cl } from '@lib/classNames'
+import { cl } from '@utils/classNames'
 import styles from './interestCard.module.css'
 
 const IntroCard = ({ interest }) => {

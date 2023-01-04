@@ -91,10 +91,18 @@
 }
 
 .link:hover::after {
-  width: 100%;
+  width: 100% !important;
+}
+
+.link.active::after {
+  width: 10px;
 }
 
 @media (min-width: 600px) {
+  .headerWrapper {
+    height: 100px;
+  }
+
   .menuBtn {
     display: none;
   }
@@ -106,9 +114,5 @@
   .linkList {
     flex-direction: row;
     gap: 2rem;
-  }
-
-  .link {
-    font-size: 0.8rem;
   }
 }

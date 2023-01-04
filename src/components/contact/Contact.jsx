@@ -13,7 +13,7 @@ const Contact = () => {
         <div className={styles.wrapper}>
           <Image
             src={pattern}
-            alt="Blue patterned decoration"
+            alt="Patterned decoration"
             className={styles.pattern}
           />
 

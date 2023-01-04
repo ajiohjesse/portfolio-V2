@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './postCard.module.css'
 import { FiCalendar, FiClock } from 'react-icons/fi'
-import { cl } from '@lib/classNames'
+import { cl } from '@utils/classNames'
 
 const PostCard = ({ post }) => {
   const { title, text } = post

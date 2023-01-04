@@ -35,3 +35,9 @@
 .card > p {
   color: var(--clr-text-muted);
 }
+
+@media (min-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}

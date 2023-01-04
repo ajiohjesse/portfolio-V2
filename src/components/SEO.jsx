@@ -5,7 +5,7 @@ const GENERIC_DESCRIPTION =
 
 const PROD_URL = 'https://jesseajioh.vercel.app'
 
-const faviconSrc = '/favicon.svg'
+// const faviconSrc = '/favicon.svg'
 
 function SEO({ description = '', title, ogImage, canonicalPath }) {
   let pageTitle = title
@@ -47,7 +47,7 @@ function SEO({ description = '', title, ogImage, canonicalPath }) {
       <meta name="twitter:image" content={actualOgImage} />
       <meta name="theme-color" content="#060608" />
 
-      <link rel="icon" type="image/svg" href={`${faviconSrc}?v=4`} />
+      {/* <link rel="icon" type="image/svg" href={`${faviconSrc}`} /> */}
 
       {typeof canonicalPath === 'string' && (
         <link rel="canonical" href={PROD_URL + canonicalPath} />

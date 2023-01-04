@@ -3,17 +3,25 @@ import Image from 'next/image'
 import styles from './header.module.css'
 import logo from '@public/svg/JALogo.svg'
 import Link from 'next/link'
-import { cl } from '@lib/classNames'
+import { cl } from '@utils/classNames'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const router = useRouter()
 
+  //close menu on scroll
   useEffect(() => {
     document.addEventListener('scroll', () => {
       setMenuOpen(false)
     })
   }, [])
+
+  //get classname for active page link
+  const getActiveLinkClass = (link) => {
+    return router.asPath === link ? cl(styles.link, styles.active) : styles.link
+  }
 
   return (
     <header className={styles.header}>
@@ -37,20 +45,31 @@ const Header = () => {
             <div className={styles.menuBar} data-bar-3></div>
           </button>
 
-          <nav className={cl(styles.nav, menuOpen ? styles.active : '')}>
+          <nav
+            className={cl(styles.nav, menuOpen ? styles.active : '')}
+            onClick={() => setMenuOpen(false)}
+          >
             <ul className={styles.linkList}>
               <li className={styles.linkItem}>
-                <Link href="/" className={styles.link}>
+                <Link href="/" className={getActiveLinkClass('/')}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link
+                  href="/"
+                  className={getActiveLinkClass('/blog')}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.link}>
+                <Link
+                  href="/contact"
+                  className={getActiveLinkClass('/contact')}
+                  onClick={() => setMenuOpen(false)}
+                >
                   Contact
                 </Link>
               </li>

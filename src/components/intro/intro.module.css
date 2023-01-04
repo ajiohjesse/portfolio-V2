@@ -30,6 +30,7 @@
   .introWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: calc(var(--spacing) / 2);
+    margin-top: 3rem;
+    gap: 4rem;
   }
 }

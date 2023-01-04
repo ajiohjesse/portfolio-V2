@@ -1,4 +1,3 @@
-import { cl } from '@lib/classNames'
 import Image from 'next/image'
 import { FiGithub, FiLink } from 'react-icons/fi'
 import styles from './projectCard.module.css'

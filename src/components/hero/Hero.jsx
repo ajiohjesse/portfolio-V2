@@ -2,7 +2,8 @@ import Container from '@components/container/Container'
 import styles from './hero.module.css'
 import heroImg from '@public/images/hero-img.png'
 import Image from 'next/image'
-import { cl } from '@lib/classNames'
+import { cl } from '@utils/classNames'
+import useScrollAnimate from '@hooks/useScrollAnimate'
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
           <Image
             priority
             src={heroImg}
-            className={styles.heroImg}
+            className={cl(styles.heroImg, 'scale')}
             alt="3d Illustration of a guy holding a laptop."
           />
         </div>

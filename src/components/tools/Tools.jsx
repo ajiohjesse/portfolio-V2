@@ -10,7 +10,7 @@ import next from '@public/svg/next.svg'
 import mongo from '@public/svg/mongo.svg'
 import node from '@public/svg/node.svg'
 import Image from 'next/image'
-import { cl } from '@lib/classNames'
+import { cl } from 'src/utils/classNames'
 
 const Tools = () => {
   return (

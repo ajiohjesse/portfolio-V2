@@ -1,12 +1,24 @@
+import Layout from '@components/Layout'
+import { usePreserveScroll } from '@hooks/usePreserveScroll'
 import useScrollAnimate from '@hooks/useScrollAnimate'
 import '@styles/globals.css'
 import '@styles/scrollAnimations.css'
+import NextProgress from 'next-progress'
+import { Toaster } from 'react-hot-toast'
 
 export default function App({ Component, pageProps }) {
-  useScrollAnimate('swing', 'swing-in')
-  useScrollAnimate('scale', 'scale-in')
-  useScrollAnimate('slide-left', 'slide-left-in')
-  useScrollAnimate('slide-right', 'slide-right-in')
+  usePreserveScroll()
 
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Toaster />
+      <NextProgress
+        color="#3cb160"
+        delay={300}
+        options={{ showSpinner: false }}
+        height="3px"
+      />
+      <Component {...pageProps} />
+    </Layout>
+  )
 }

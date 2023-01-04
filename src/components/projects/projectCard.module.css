@@ -3,7 +3,6 @@
   padding: 2rem;
   display: grid;
   gap: 2rem;
-  border-radius: var(--border-radius);
   box-shadow: var(--shadow-dark-right);
 }
 

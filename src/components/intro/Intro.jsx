@@ -3,7 +3,7 @@ import TitleHeading from '@components/titleHeading/TitleHeading'
 import styles from './intro.module.css'
 import { introText, introSkills } from '@lib/introduction'
 import IntroCard from './IntroCard'
-import { cl } from '@lib/classNames'
+import { cl } from '@utils/classNames'
 
 const Intro = () => {
   return (

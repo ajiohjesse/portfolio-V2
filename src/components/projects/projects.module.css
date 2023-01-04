@@ -12,11 +12,6 @@
   .projectsWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-  .projectsWrapper {
-    gap: 3rem;
+    gap: 4rem;
   }
 }

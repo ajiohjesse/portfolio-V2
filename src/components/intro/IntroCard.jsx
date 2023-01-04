@@ -1,5 +1,5 @@
 import useScrollAnimate from '@hooks/useScrollAnimate'
-import { cl } from '@lib/classNames'
+import { cl } from 'src/utils/classNames'
 import styles from './introCard.module.css'
 
 const IntroCard = ({ skill }) => {

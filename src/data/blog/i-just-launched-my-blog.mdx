@@ -1,0 +1,103 @@
+---
+title: "I just launched my blog"
+date: "2022-11-25"
+tags: ["web development"]
+
+metadata: {
+  isPublished: true,
+  isFeatured: true,
+  lastUpdated: "2022-11-25"
+}
+
+summary: "
+Hello, my name is Jesse Ajioh. I began 
+my journey to become a web developer 
+earlier this year (2022). Before embarking
+ on this journey, I had experience with 
+blogging platforms such as Blogger 
+and WordPress, as well as with WYSIWYG 
+tools that generated static website code 
+that I usually didn't understand but
+ could modify to suit my needs. After
+ many lessons, numerous challenges, 
+and yes, even frustrations, I'm proud
+ to present to you my very own portfolio
+ website / blog.
+" 
+
+---
+
+<Article>
+
+> “If you are working on something that you really care about,
+> you don\'t have to be pushed. The vision pulls you.” — Steve Jobs
+
+## Why I chose web development
+
+I've always been fascinated by the internet: how it works, how it connects the world, and how it can be used to solve real-world problems. That curiosity and passion for the internet drove my decision to pursue a career in web development. I enjoy working with code and the challenge of creating something from scratch. 
+
+Web development roles are divided into three categories: those who specialize in the user interface ("front-end"), those who write the underlying code for running all website operations ("back-end"), and those who manage all aspects of a website ("full stack"). Each type specializes in a different aspect of web development, but they all have one thing in common: they all code. I'm primarily a frontend developer, but I also dabble in backend development on occasion. As a frontend developer, I like working with fullstack frameworks like Next.js because they make it easy to set up backend capabilities without deviating too far from frontend development.
+
+### The journey so far
+
+My web development experience has been both interesting and challenging, as well as frustrating at times. 🤦 I had to learn a lot of concepts from scratch, and finding learning materials that did not assume prior knowledge proved difficult. Web development is a fast-paced industry. Things change almost every day. This frequently resulted in unanticipated bugs or complete code failure while following tutorials built with libraries that were either depreciated or had been updated to other versions. Regardless of the challenges I've faced, I'd say the resulting quest to overcome them has fueled my passion and broadened my knowledge base as a web developer in a relatively short period of time.
+
+## What is this website about?
+
+My goal for this website is to showcase some of my work to potential clients and collaborators, as well as to provide access to information and tools that those new to web development may require to get started or solve some of the problems they're bound to encounter.
+
+Over the course of my journey as a
+Web developer, I've acquired several critical skills and knowledge bits that I'd like to share with those just starting out in web development to make their lives a little easier. My posts will also include tutorials on some of the projects I've built and how I built them, as well as my general experience as a web developer.
+
+
+## How I built this website
+
+The design and structure of this website are mostly influenced by Josh Comeau's blog. His blog has so many cool features that I couldn't help but try to replicate some of them. His blog, however, is not open-source, so there was no GitHub repository for me to clone, and since I prefer building my own designs, I drew inspiration from it and built almost everything from scratch.
+
+### Technology stack
+
+This website is built with Next.js. Next.js is a react framework for building single page web applications (SPA). The blog content is not hosted in a content management system (CMS), rather it resides locally within the website directory as markdown files. The integration of markdown with Next.js is made possible by Next-mdx-remote. Prism was used to format and style the code section of blog posts, while rehype plugins such as rehype-autolink-headings and rehype-toc are responsible for adding a bookmark link to every heading within blog posts and injecting a table of content respectively. 
+
+This website has minimal backend requirements and only one API route is available. Because Next.js is a fullstack framework, I was able to use the built-in API feature to create a route that receives information from the website contact form and sends it directly to my email address using Nodemailer. In the future, I hope to incorporate a 'like' feature for blog posts, which may necessitate the creation of additional routes and the establishment of a database to store all of that data.
+
+### Features
+
+Some of the features available on this website;
+
+1. Light / dark theme; 
+
+Setting up a dark theme may appear to be a relatively simple task, but setting up a dark theme that adapts to the device's default theme first, changes when a user toggles a theme button, and remembers the user's preference for future visits requires a little finesse, especially with a framework like Next.js, where you must consider things like server side rendering and the dreaded theme flickering. 
+
+Note: Theme flickering is a situation where the screen flashes the default theme for a brief moment when a page loads before changing to to the user preferred theme.
+(Gif of theme flickering)
+
+As Josh Comeau puts it, "in software development, a simple feature can have a complex implementation." Setting up a smooth dark theme with no flickering proved to be a challenge while building this website but luckily, this article from Josh Comeau helped to put me on the right track.
+
+2. subtle animations;
+
+I'm a big fan of web animations. Animations improve the flow of content on a website and generally improve the overall user experience. They make websites feel more alive and less boring. While building this website, I utilized the concept of react hooks to create a "useObserver"  hook which in turn utilizes javascript Intersection Observer API to detect when components are within the device viewport and animate them accordingly. For the sake of simplicity, I chose this solution over using a third-party animation library. In the future, I'll write a detailed post about how I did this.
+
+3. sparkly text; 
+
+I saw this cool feature on Josh Comeaus' blog and decided to replicate it. He published an article about how he created his own sparkly text component. Mine is a little different and more simplistic, but I still like it. 😁 The sparkly text component adds some sparkles to a piece of text and is used give the impression that something is either unique or brand new.
+
+4. bookmarks on blog headings;
+
+Every heading in a blog post has a hidden hashtag at the end that appears when you hover your mouse over the heading (or click on it for mobile users). When you click this hashtag, it automatically scrolls that section to the top of the screen, making it easier to navigate through the post content. Most blogs and documentation sites have this feature, so it's not a big deal, but it's still a useful feature to be aware of. It's powered by a rehype plugin called rehype-autolink-headings.
+
+5. blog search; 
+
+The blog page includes a feature that allows you to search for blog posts by post title or post keywords. The title search will attempt to match your search text with post titles (helpful when looking for a specific post), whereas the keywords search will attempt to match words in your search term with post titles and/or tags (useful when searching by post tags).
+
+6. it's blazingly fast;
+
+Applications built with Next. js are fast because of Server-side Rendering and Static Generation. Next.js also offers many performance enhancement features such as image optimization which combine to make this site blazingly fast and responsive.
+
+## More from me
+
+I'm currently developing dashboards and website templates with next.js and vite, as well as experimenting with backend development by using the MERN stack to create simple REST APIs. I'll be documenting my progress and sharing some of the skills I've learned along the way here. Visit my GitHub page to see the source code for some of the projects I've worked on.
+
+Thanks for reading 🤗✌️.
+
+
+</Article>
