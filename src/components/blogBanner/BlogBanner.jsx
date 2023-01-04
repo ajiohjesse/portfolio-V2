@@ -11,12 +11,13 @@ const BlogBanner = () => {
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.text}>
-            <h1 className={styles.intro}>
+            <h1>Welcome To My Blog.</h1>
+            <p className={styles.intro}>
               <span className="scale">{blogIntro.firstParagraph}</span>
               <br />
               <br />
               <span className="scale">{blogIntro.secondParagraph}</span>
-            </h1>
+            </p>
           </div>
 
           <div className={styles.imgWrapper}>

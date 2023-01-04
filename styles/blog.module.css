@@ -1,0 +1,5 @@
+.allPosts {
+  padding-bottom: var(--spacing);
+  padding-top: 3rem;
+  background-color: var(--clr-bg-secondary);
+}

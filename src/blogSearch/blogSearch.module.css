@@ -1,0 +1,53 @@
+.search {
+  background-color: var(--clr-bg-secondary);
+  padding-top: var(--spacing);
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.inputGroup,
+.selectGroup {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.inputGroup > label,
+.selectGroup > label {
+  font-family: var(--title-heading-family);
+}
+
+.input {
+  padding: 0.8rem;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background-color: var(--clr-bg-card);
+  outline: none;
+  color: var(--clr-text-muted);
+  transition: all 200ms ease-in;
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--clr-primary);
+}
+
+.select {
+  padding: 0.8rem;
+  border-radius: var(--border-radius);
+  color: var(--clr-text-muted);
+  background-color: var(--clr-bg-card);
+  outline: none;
+  border: 1px solid transparent;
+  transition: all 200ms ease-in;
+}
+
+
+@media (min-width: 480px) {
+  .wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}

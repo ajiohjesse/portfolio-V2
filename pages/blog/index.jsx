@@ -7,6 +7,7 @@ import { posts } from '@components/latestPosts/LatestPosts'
 import useScrollAnimate from '@hooks/useScrollAnimate'
 import TitleHeading from '@components/titleHeading/TitleHeading'
 import BlogBanner from '@components/blogBanner/blogBanner'
+import BlogSearch from 'src/blogSearch/BlogSearch'
 
 const Blog = () => {
   useScrollAnimate('scale', 'scale-in')
@@ -22,18 +23,18 @@ related to creating beautiful and intuitive user experiences on the web."
       />
       <main>
         <BlogBanner />
-        {/* To do: search componenet */}
+        <BlogSearch />
 
-        <Container>
-          <div className={styles.allPosts}>
+        <section className={styles.allPosts}>
+          <Container>
             <TitleHeading>All Posts: {posts.length}</TitleHeading>
             <div className={postStyles.wrapper}>
               {posts.map((post, i) => (
                 <PostCard key={i} post={post} />
               ))}
             </div>
-          </div>
-        </Container>
+          </Container>
+        </section>
       </main>
     </>
   )
