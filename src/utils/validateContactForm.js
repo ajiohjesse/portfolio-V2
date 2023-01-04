@@ -1,6 +1,6 @@
 import validString from './stringValidator'
 
-export default function ({ name, email, message }) {
+export function validateContactForm({ name, email, message }) {
   if (validString.isEmpty(name)) {
     return { validated: false, message: 'Name is required' }
   }

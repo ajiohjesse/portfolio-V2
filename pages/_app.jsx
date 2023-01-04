@@ -11,7 +11,16 @@ export default function App({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          style: {
+            borderRadius: '10px',
+            padding: '16px',
+            color: '#fff',
+            background: '#16181d',
+          },
+        }}
+      />
       <NextProgress
         color="#3cb160"
         delay={300}

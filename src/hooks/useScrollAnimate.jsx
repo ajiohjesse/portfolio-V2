@@ -22,7 +22,7 @@ const useScrollAnimate = (className, intro) => {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [className, intro])
 }
 
 export default useScrollAnimate
