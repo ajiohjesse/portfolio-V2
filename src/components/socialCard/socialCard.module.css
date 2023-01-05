@@ -1,0 +1,40 @@
+.link {
+  all: unset;
+}
+
+.link:active > .card,
+.link:focus > .card {
+  border-color: var(--clr-primary);
+}
+
+.card {
+  background-color: var(--clr-bg-card);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  display: grid;
+  gap: 1.2rem;
+  place-items: center;
+  box-shadow: var(--shadow-dark-right);
+  border: 1px solid transparent;
+  transition: all 300ms ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-color-right);
+}
+
+.icon {
+  font-size: 1.4rem;
+  color: var(--clr-primary);
+}
+
+.title {
+  background: var(--clr-primary-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.username {
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+}
