@@ -7,7 +7,7 @@ import useScrollAnimate from '@hooks/useScrollAnimate'
 import { socialDetails } from '@lib/socialDetails'
 import styles from '@styles/contactPage.module.css'
 
-const contact = () => {
+const Contact = () => {
   useScrollAnimate('scale', 'scale-in')
 
   return (
@@ -32,4 +32,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
