@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
+.link {
+  color: var(--clr-link);
+  text-decoration: underline;
+}
+
+.p {
+  overflow-wrap: break-word;
+  color: var(--clr-text);
+  margin-bottom: 1rem;
+}
+
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--title-heading-family);
+  overflow-wrap: break-word;
+  margin: 3rem 0 1.38rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.h2 {
+  font-size: 1.333rem;
+  background: var(--clr-primary-gradient);
+  background-clip: text;
+  color: transparent;
+}
+.h3 {
+  font-size: 1.222rem;
+}
+.h4 {
+  font-size: 1.111rem;
+}
+.h5 {
+  font-size: 1rem;
+}
+.h6 {
+  font-size: 1rem;
+}
+
+/* Special styles */
+
+.infoText,
+.warningText,
+.quoteText {
+  background-color: #426e911a;
+  padding: 2rem;
+  margin-block: 50px;
+  border-radius: 0 10px 10px 0;
+  border-left: 2px solid var(--clr-primary);
+  color: var(--clr-text-muted);
+  position: relative;
+}
+
+.infoIcon {
+  position: absolute;
+  color: var(--clr-primary);
+  font-size: 1.2rem;
+  height: 35px;
+  width: 35px;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-bg-primary);
+  border-radius: 50%;
+  top: -0.5rem;
+  left: -0.5rem;
+}
+
+.infoIcon[data-warning] {
+  color: maroon;
+  /* color: var(--secondary); */
+}
+
+.infoText > p,
+.warningText > p,
+.quoteText > p {
+  margin: 0;
+  color: var(--text-muted);
+  position: relative;
+}
+
+.warningText {
+  border-left-color: maroon;
+  /* border-left-color: var(--secondary); */
+  background-color: #9154421f;
+}
+
+.quoteText {
+  position: relative;
+  padding: 4rem;
+  font-family: "Merienda", cursive;
+}
+
+@media (max-width: 640px) {
+  .quoteText {
+    padding: 2rem;
+  }
+}
+
+.quoteText::before {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  top: -0.5rem;
+  left: 5px;
+  opacity: 0.1;
+}
+.quoteText::after {
+  content: '"';
+  font-size: 4rem;
+  position: absolute;
+  bottom: -3rem;
+  right: 1rem;
+  opacity: 0.2;
+}
+
+.ul,
+.ol {
+  display: grid;
+  gap: 1rem;
+  color: var(--clr-text);
+}
+
+.ul > li {
+  list-style: initial;
+}
+
+.ol > li {
+  list-style: decimal;
+}
+
+/* .ol > li::marker {
+color: var(--text-muted);
+} */
+
+.h2::before,
+.h3::before,
+.h4::before,
+.h5::before,
+.h6::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.cursive {
+  font-family: "Merienda", cursive;
+}
+
+.inlineCode {
+  color: var(--clr-text-muted);
+  /* background-color: var(--clr-bg-primary); */
+}
+
+.highlight {
+  background-color: rgb(182, 192, 201);
+  padding: 2px;
+  color: black;
+}

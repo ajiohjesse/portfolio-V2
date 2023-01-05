@@ -27,12 +27,14 @@ const Header = () => {
     <header className={styles.header}>
       <Container>
         <div className={styles.headerWrapper}>
-          <Image
-            src={logo}
-            alt="Logo showing the J and A alphabets."
-            height="20"
-            width="48"
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Logo showing the J and A alphabets."
+              height="20"
+              width="48"
+            />
+          </Link>
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}

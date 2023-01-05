@@ -13,7 +13,7 @@ import tableOfContent from 'rehype-toc'
 const root = process.cwd()
 
 export async function getFiles(type) {
-  return fs.readdirSync(path.join(root, '/src/data', type)) 
+  return fs.readdirSync(path.join(root, '/src/data', type))
 }
 
 export async function getFileBySlug(type, slug) {
@@ -24,6 +24,7 @@ export async function getFileBySlug(type, slug) {
   const { data, content } = matter(source)
   const mdxSource = await serialize(content, {
     mdxOptions: {
+      development: false,
       remarkPlugins: [remarkCapitalize],
       rehypePlugins: [
         codeTitles,
