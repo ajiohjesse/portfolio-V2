@@ -1,0 +1,45 @@
+.glitter {
+  position: relative;
+}
+
+.glitter > span:not(:last-child) {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  animation: fade-in-out 800ms alternate-reverse infinite;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.glitter > span:nth-child(2) {
+  top: unset;
+  left: unset;
+  right: -5px;
+  bottom: 8px;
+  animation-duration: 500ms;
+}
+
+.glitter > span:nth-child(3) {
+  top: 10px;
+  left: unset;
+  right: 10px;
+  animation-duration: 400ms;
+}
+
+.glitter > span:nth-child(4) {
+  top: 30%;
+  left: 30%;
+  animation-duration: 400ms;
+  font-size: 2rem;
+}
+
+.glitter > span:last-child {
+  font-weight: 700;
+}
+
+@keyframes fade-in-out {
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(120deg);
+  }
+}

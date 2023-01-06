@@ -21,6 +21,7 @@
 
   --clr-primary: #3cb160;
   --clr-link: #6797ff;
+  --clr-accent: #f8d92c;
 
   --clr-primary-gradient: linear-gradient(
     90deg,
@@ -198,4 +199,59 @@ button {
   body {
     padding-top: 100px;
   }
+}
+
+.icon.icon-link::after {
+  content: "#";
+  color: var(--clr-link) !important;
+  opacity: 0;
+  padding: 10px;
+  font-size: 1em;
+  opacity: 0;
+  font-weight: 400;
+  transition: all 200ms ease;
+}
+
+h2:hover > * > span::after,
+h3:hover > * > span::after,
+h4:hover > * > span::after,
+h5:hover > * > span::after,
+h6:hover > * > span::after {
+  opacity: 1 !important;
+}
+
+/* rehype table of content */
+nav.toc {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  z-index: 5;
+}
+
+nav.toc a {
+  text-decoration: underline;
+  font-weight: 500;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+nav.toc a:hover {
+  color: var(--clr-text-muted);
+}
+
+nav.toc::before {
+  content: "Table of Content";
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: var(--title-heading-family);
+}
+
+nav.toc > ol {
+  display: grid;
+  gap: 1rem;
+}
+
+nav.toc ol li ol li {
+  margin-top: 0.5rem;
+  list-style-type: disc;
 }

@@ -16,7 +16,7 @@
   box-shadow: var(--shadow-color-right);
 }
 
-.card:nth-last-of-type(even):hover {
+.card:nth-of-type(even):hover {
   box-shadow: var(--shadow-color-left);
 }
 

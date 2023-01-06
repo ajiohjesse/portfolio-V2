@@ -32,13 +32,14 @@ export async function getFileBySlug(type, slug) {
         [
           rehypeAutolinkHeadings,
           {
-            behavior: 'prepend',
+            behavior: 'append',
           },
         ],
         [
           tableOfContent,
           {
-            headings: ['h2, h3'],
+            headings: ['h2', 'h3'],
+            position: 'afterbegin',
           },
         ],
         mdxPrism,

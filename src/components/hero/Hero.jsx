@@ -3,8 +3,11 @@ import styles from './hero.module.css'
 import heroImg from '@public/images/hero-img.png'
 import Image from 'next/image'
 import { cl } from '@utils/classNames'
+import { useRouter } from 'next/router'
 
 const Hero = () => {
+  const router = useRouter()
+
   return (
     <section className={styles.hero}>
       <Container>
@@ -16,7 +19,12 @@ const Hero = () => {
               <span className="scale">&#38; UI designer</span>
             </h1>
 
-            <button className={cl(styles.cta, 'scale')}>Contact Me</button>
+            <button
+              onClick={() => router.push('/contact')}
+              className={cl(styles.cta, 'scale')}
+            >
+              Contact Me
+            </button>
           </div>
 
           <Image

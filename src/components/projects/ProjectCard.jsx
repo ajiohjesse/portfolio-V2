@@ -1,3 +1,4 @@
+import Glitter from '@components/glitter/Glitter'
 import Image from 'next/image'
 import { FiGithub, FiLink } from 'react-icons/fi'
 import styles from './projectCard.module.css'
@@ -8,7 +9,9 @@ const ProjectCard = ({ project }) => {
     <article className={styles.card}>
       <Image src={image} className={styles.image} alt={title} />
       <div className={styles.text}>
-        <h3 className="scale">{title}</h3>
+        <Glitter>
+          <h3 className="scale">{title}</h3>
+        </Glitter>
         <p className="scale">{text}</p>
         <div className={styles.links}>
           <a

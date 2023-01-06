@@ -1,0 +1,30 @@
+.notFound {
+  padding-block: 2.5rem;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+.image {
+  height: 200px;
+}
+
+.button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  background: var(--clr-primary-gradient);
+  color: var(--clr-text);
+  transition: all 300ms ease;
+}
+
+.button:hover {
+  box-shadow: var(--shadow-color-right);
+}
+
+.button:active {
+  transform: scale(0.9);
+}

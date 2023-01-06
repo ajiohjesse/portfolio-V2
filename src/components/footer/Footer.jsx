@@ -8,8 +8,8 @@ const Footer = () => {
       <Container>
         <div className={styles.wrapper}>
           <p>
-            &copy;{new Date().getFullYear()}. Designed with <FiHeart /> by Jesse
-            Ajioh
+            &copy;2023 All rights reserved. Designed with <FiHeart /> by Jesse
+            Ajioh.
           </p>
         </div>
       </Container>

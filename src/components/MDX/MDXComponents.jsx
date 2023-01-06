@@ -1,7 +1,8 @@
 import styles from './mdxComponents.module.css'
 import { FiInfo } from 'react-icons/fi'
 import { HiOutlineLightBulb } from 'react-icons/hi'
-// import Glitter from '../ui/glitter/Glitter'
+import Link from 'next/link'
+import Glitter from '@components/glitter/Glitter'
 
 const MDXComponents = {
   a: (props) => <a {...props} className={styles.link} />,
@@ -12,37 +13,33 @@ const MDXComponents = {
   h6: (props) => <h6 {...props} className={styles.h6} />,
   p: (props) => <p {...props} className={styles.p} />,
   ul: (props) => <ul {...props} className={styles.ul} />,
-  ol: (props) => <ul {...props} className={styles.ol} />,
+  ol: (props) => <ol {...props} className={styles.ol} />,
+  code: (props) => <code {...props} className={styles.inlineCode} />,
+  blockquote: (props) => <blockquote {...props} className={styles.quoteText} />,
+  Link: ({ props, href, children }) => (
+    <Link href={href} {...props} className={styles.link}>
+      {children}
+    </Link>
+  ),
+
+  Group: (props) => <div {...props} />,
 
   InlineCode: (props) => <code {...props} className={styles.inlineCode} />,
+
   Highlight: (props) => <span {...props} className={styles.highlight} />,
 
-  // Glitter: ({ props, children }) => <Glitter {...props}>{children}</Glitter>,
+  Glitter: (props) => <Glitter {...props} />,
 
-  Cursive: (props) => <span {...props} className={styles.cursive} />,
+  SpicyText: (props) => <span {...props} className={styles.cursive} />,
 
-  Article: (props) => <article {...props} />,
-
-  InfoText: ({ props, children }) => (
+  InfoText: ({ props, children, lamp = false }) => (
     <aside {...props} className={styles.infoText}>
       <div className={styles.infoIcon}>
-        <HiOutlineLightBulb />
+        {lamp ? <HiOutlineLightBulb /> : <FiInfo />}
       </div>
       {children}
     </aside>
   ),
-
-  WarningText: ({ props, children }) => (
-    <aside {...props} className={styles.warningText}>
-      <div className={styles.infoIcon} data-warning>
-        <FiInfo />
-      </div>
-
-      {children}
-    </aside>
-  ),
-
-  blockquote: (props) => <blockquote {...props} className={styles.quoteText} />,
 }
 
 export default MDXComponents
