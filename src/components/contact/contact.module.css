@@ -38,6 +38,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--clr-text-muted);
+  color: var(--clr-text) !important;
 }
 
 .inputGroup > textarea {
@@ -47,6 +48,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--clr-text-muted);
+  color: var(--clr-text) !important;
 }
 
 .inputGroup > :is(input, textarea) {
