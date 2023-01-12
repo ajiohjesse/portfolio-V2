@@ -1,5 +1,6 @@
 .link {
   all: unset;
+  cursor: pointer;
 }
 
 .link:active > .card,

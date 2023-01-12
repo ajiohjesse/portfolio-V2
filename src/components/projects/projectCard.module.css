@@ -22,12 +22,16 @@
   align-content: space-evenly;
 }
 
-.text > h3 {
+.text h3 {
   font-family: var(--title-heading-family);
   background: var(--clr-primary);
   background: var(--clr-primary-gradient);
   background-clip: text;
   color: transparent;
+}
+
+.text > p {
+  color: var(--clr-text-muted);
 }
 
 .links {

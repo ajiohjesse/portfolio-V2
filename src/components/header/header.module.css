@@ -113,10 +113,6 @@
 }
 
 @media (min-width: 600px) {
-  .headerWrapper {
-    height: 100px;
-  }
-
   .menuBtn {
     display: none;
   }

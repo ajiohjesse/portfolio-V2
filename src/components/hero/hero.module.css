@@ -84,7 +84,8 @@
 
 @media (min-width: 600px) {
   .hero {
-    margin-block: var(--spacing);
+    margin-bottom: var(--spacing);
+    margin-top: 1rem;
     padding-bottom: 0;
   }
 
@@ -111,10 +112,6 @@
 }
 
 @media (min-width: 767px) {
-  .hero {
-    margin-top: 1rem;
-  }
-
   .experience {
     margin-top: 0;
     gap: 4rem;

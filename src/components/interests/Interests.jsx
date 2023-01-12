@@ -8,7 +8,7 @@ const Interests = () => {
   return (
     <section className={styles.interests}>
       <Container>
-        <TitleHeading>Im Interested In</TitleHeading>
+        <TitleHeading>I&#39;m Interested In</TitleHeading>
       </Container>
 
       <div className={styles.cardContainer}>

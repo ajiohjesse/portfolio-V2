@@ -10,8 +10,8 @@ export const interests = [
     text: `I am passionate about creating 
     websites that are easy to use on
     a variety of devices and web browsers
-    by using both the "mobile first"
-    approach and "CSS media queries".`,
+    by using both the mobile first
+    approach and CSS media queries.`,
   },
   {
     icon: <BiCodeAlt />,
