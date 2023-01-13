@@ -1,7 +1,17 @@
 ## **JESSE AJIOH - PORTFOLIO**
 
-My name is Jesse Ajioh. I'm a self taught web developer.
+[Visit Website](https://jesseajioh.vercel.app)
 
-I specialize in building full stack web applications with JavaScript, HTML and CSS. My favourite front-end framework is Next.js. I also utilize the MERN stack from time to time.
+### Hello, I'm Jesse Ajioh. I'm a self taught web developer.
+
+As a web developer with over a year of experience, I am passionate
+about creating intuitive and engaging user experiences. I am
+proficient in Javascript and have a solid understanding of web
+development principles.
+
+In addition to my technical skills, I have copywriting experience
+and can bring a unique perspective to any design process. I am
+always looking for new ways to improve and grow as a developer,
+and I am eager to take on new challenges and projects.
 
 This is my portfolio website which features a few of the projects I've worked on. You can contact me via ajiohjesse@gmail.com

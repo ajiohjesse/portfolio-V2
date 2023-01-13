@@ -11,7 +11,7 @@ export const socialDetails = [
     icon: <FiTwitter />,
     title: 'Twitter',
     username: '@rehxofficial',
-    link: 'https://twitter.com/rehxnation',
+    link: 'https://twitter.com/rehxofficial',
   },
   {
     icon: <FiFacebook />,

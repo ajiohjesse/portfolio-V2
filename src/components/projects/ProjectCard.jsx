@@ -1,10 +1,10 @@
-import Glitter from '@components/glitter/Glitter'
-import Image from 'next/image'
-import { FiGithub, FiLink } from 'react-icons/fi'
-import styles from './projectCard.module.css'
+import Glitter from "@components/glitter/Glitter";
+import Image from "next/image";
+import { FiGithub, FiLink } from "react-icons/fi";
+import styles from "./projectCard.module.css";
 
 const ProjectCard = ({ project }) => {
-  const { title, image, text, githubLink, webLink } = project
+  const { title, image, text, github, website } = project;
   return (
     <article className={styles.card}>
       <Image src={image} className={styles.image} alt={title} />
@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
         <div className={styles.links}>
           <a
             className="slide-left"
-            href="https://github.com"
+            href={github}
             target="_blank"
             rel="noreferrer"
           >
@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => {
           </a>
           <a
             className="slide-right"
-            href="https://github.com"
+            href={website}
             target="_blank"
             rel="noreferrer"
           >
@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
