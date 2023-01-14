@@ -7,7 +7,7 @@ import stringValidator from "@utils/stringValidator";
 
 const PostCard = ({ post }) => {
   return (
-    <article className={cl(styles.card, "scale")}>
+    <article className={cl(styles.card)}>
       <h3 className={styles.title}>{post.title}</h3>
       <div className={styles.metadata}>
         <div>

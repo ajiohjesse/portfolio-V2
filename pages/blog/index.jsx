@@ -8,11 +8,15 @@ import TitleHeading from "@components/titleHeading/TitleHeading";
 import BlogBanner from "@components/blogBanner/BlogBanner";
 import BlogSearch from "@components/blogSearch/BlogSearch";
 import { getAllFilesFrontMatter } from "@helpers/mdx";
+import { useState } from "react";
 
-const Blog = ({posts}) => {
+const Blog = ({ posts }) => {
   useScrollAnimate("scale", "scale-in");
   useScrollAnimate("slide-left", "slide-left-in");
   useScrollAnimate("slide-right", "slide-right-in");
+
+  const [searchResults, setSearchResults] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
 
   return (
     <>
@@ -23,17 +27,35 @@ related to creating beautiful and intuitive user experiences on the web."
       />
       <main>
         <BlogBanner />
-        <BlogSearch />
+        <BlogSearch
+          posts={posts}
+          searchResults={searchResults}
+          setIsSearching={setIsSearching}
+          setSearchResults={setSearchResults}
+        />
 
         <section className={styles.allPosts}>
-          <Container>
-            <TitleHeading>All Posts: {posts.length}</TitleHeading>
-            <div className={postStyles.wrapper}>
-              {posts.map((post, i) => (
-                <PostCard key={i} post={post} />
-              ))}
-            </div>
-          </Container>
+          {!isSearching ? (
+            <Container>
+              <TitleHeading>All Posts: {posts.length}</TitleHeading>
+              <div className={postStyles.wrapper}>
+                {posts.map((post, i) => (
+                  <PostCard key={i} post={post} />
+                ))}
+              </div>
+            </Container>
+          ) : (
+            <Container>
+              <TitleHeading>
+                Search results: {searchResults.length}
+              </TitleHeading>
+              <div className={postStyles.wrapper}>
+                {searchResults.map((post, i) => (
+                  <PostCard key={i} post={post} />
+                ))}
+              </div>
+            </Container>
+          )}
         </section>
       </main>
     </>

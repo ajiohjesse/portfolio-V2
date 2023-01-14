@@ -7,8 +7,8 @@
   /* shadow */
   --shadow-color-right: 12px 14px 10px -6px rgba(7, 7, 39, 0.9);
   --shadow-color-left: -12px 14px 10px -6px rgba(7, 7, 39, 0.9);
-  --shadow-dark-right: 12px 14px 10px -6px rgba(0, 0, 0, 0.35);
-  --shadow-dark-left: -12px 14px 10px -6px rgba(0, 0, 0, 0.35);
+  --shadow-dark-right: 12px 14px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-dark-left: -12px 14px 10px -6px rgba(0, 0, 0, 0.1);
 
   /* padding */
   --spacing: 70px;

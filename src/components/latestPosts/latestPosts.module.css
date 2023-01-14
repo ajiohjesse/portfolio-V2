@@ -9,6 +9,34 @@
   gap: 3rem;
 }
 
+.allPosts {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.allPosts > button {
+  height: 50px;
+  font-size: 0.875rem;
+  padding-inline: 3rem;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--clr-primary);
+  background: var(--clr-primary-gradient);
+  color: var(--clr-text);
+  transition: all 300ms ease;
+}
+
+.allPosts > button:hover {
+  box-shadow: var(--shadow-color-right);
+}
+
+.allPosts > button:active {
+  transform: scale(0.9);
+}
+
 @media (min-width: 767px) {
   .wrapper {
     display: grid;
