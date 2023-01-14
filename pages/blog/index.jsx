@@ -1,18 +1,18 @@
-import Container from '@components/container/Container'
-import SEO from '@components/SEO'
-import styles from '@styles/blog.module.css'
-import postStyles from '@components/latestPosts/latestPosts.module.css'
-import PostCard from '@components/latestPosts/PostCard'
-import { posts } from '@components/latestPosts/LatestPosts'
-import useScrollAnimate from '@hooks/useScrollAnimate'
-import TitleHeading from '@components/titleHeading/TitleHeading'
-import BlogBanner from '@components/blogBanner/BlogBanner'
-import BlogSearch from '@components/blogSearch/BlogSearch'
+import Container from "@components/container/Container";
+import SEO from "@components/SEO";
+import styles from "@styles/blog.module.css";
+import postStyles from "@components/latestPosts/latestPosts.module.css";
+import PostCard from "@components/latestPosts/PostCard";
+import useScrollAnimate from "@hooks/useScrollAnimate";
+import TitleHeading from "@components/titleHeading/TitleHeading";
+import BlogBanner from "@components/blogBanner/BlogBanner";
+import BlogSearch from "@components/blogSearch/BlogSearch";
+import { getAllFilesFrontMatter } from "@helpers/mdx";
 
-const Blog = () => {
-  useScrollAnimate('scale', 'scale-in')
-  useScrollAnimate('slide-left', 'slide-left-in')
-  useScrollAnimate('slide-right', 'slide-right-in')
+const Blog = ({posts}) => {
+  useScrollAnimate("scale", "scale-in");
+  useScrollAnimate("slide-left", "slide-left-in");
+  useScrollAnimate("slide-right", "slide-right-in");
 
   return (
     <>
@@ -37,7 +37,17 @@ related to creating beautiful and intuitive user experiences on the web."
         </section>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;
+
+export const getStaticProps = async () => {
+  const posts = await getAllFilesFrontMatter("blog");
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};

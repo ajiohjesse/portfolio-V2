@@ -1,12 +1,13 @@
-import Layout from '@components/Layout'
-import { usePreserveScroll } from '@hooks/usePreserveScroll'
-import '@styles/globals.css'
-import '@styles/scrollAnimations.css'
-import NextProgress from 'next-progress'
-import { Toaster } from 'react-hot-toast'
+import Layout from "@components/Layout";
+import { usePreserveScroll } from "@hooks/usePreserveScroll";
+import "@styles/globals.css";
+import "@styles/scrollAnimations.css";
+import "@styles/prism/atom.css";
+import NextProgress from "next-progress";
+import { Toaster } from "react-hot-toast";
 
 export default function App({ Component, pageProps }) {
-  usePreserveScroll()
+  usePreserveScroll();
 
   return (
     <Layout>
@@ -14,10 +15,10 @@ export default function App({ Component, pageProps }) {
         toastOptions={{
           duration: 2000,
           style: {
-            borderRadius: '10px',
-            padding: '16px',
-            color: '#fff',
-            background: '#16181d',
+            borderRadius: "10px",
+            padding: "16px",
+            color: "#fff",
+            background: "#16181d",
           },
         }}
       />
@@ -29,5 +30,5 @@ export default function App({ Component, pageProps }) {
       />
       <Component {...pageProps} />
     </Layout>
-  )
+  );
 }

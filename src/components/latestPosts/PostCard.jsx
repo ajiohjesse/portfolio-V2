@@ -1,29 +1,30 @@
-import Link from 'next/link'
-import styles from './postCard.module.css'
-import { FiCalendar, FiClock } from 'react-icons/fi'
-import { cl } from '@utils/classNames'
+import Link from "next/link";
+import styles from "./postCard.module.css";
+import { FiCalendar, FiClock } from "react-icons/fi";
+import { cl } from "@utils/classNames";
+import moment from "moment/moment";
 
 const PostCard = ({ post }) => {
-  const { title, text } = post
+  
   return (
-    <article className={cl(styles.card, 'scale')}>
-      <h3 className={styles.title}>{title}</h3>
+    <article className={cl(styles.card, "scale")}>
+      <h3 className={styles.title}>{post.title}</h3>
       <div className={styles.metadata}>
         <div>
           <FiCalendar />
-          <p>Published 3 days ago</p>
+          <p>Published {moment(post.date).fromNow()}</p>
         </div>
         <div>
           <FiClock />
-          <p>5min read</p>
+          <p>{post.readingTime.text}</p>
         </div>
       </div>
-      <p className={styles.text}>{text}</p>
-      <Link href="/" className={styles.link}>
+      <p className={styles.text}>{post.summary}</p>
+      <Link href={`/blog/${post.slug}`} className={styles.link}>
         Read More
       </Link>
     </article>
-  )
-}
+  );
+};
 
-export default PostCard
+export default PostCard;

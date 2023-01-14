@@ -5,11 +5,16 @@
   text-decoration: underline;
 }
 
+.link * {
+  color: var(--clr-link) !important;
+}
+
 .p {
   overflow-wrap: break-word;
   color: var(--clr-text);
   margin-bottom: 1rem;
   line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
 .h2,
@@ -28,6 +33,11 @@
   font-size: 1.333rem;
   color: var(--clr-accent);
 }
+
+.h2:not(.h2:first-child) {
+  margin-top: 4rem !important;
+}
+
 .h3 {
   font-size: 1.222rem;
 }
@@ -128,6 +138,7 @@
 
 .inlineCode {
   color: var(--clr-text-muted);
+  color: #44bff0;
   padding-inline: 1rem;
   background-color: var(--clr-bg-card);
 }
@@ -142,4 +153,17 @@
   .h2 {
     margin-top: 0;
   }
+}
+
+.blogImg {
+  margin-block: 3rem;
+  position: relative;
+}
+
+.blogImg > p {
+  color: var(--clr-text-muted);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  font-style: italic;
+  text-align: center;
 }

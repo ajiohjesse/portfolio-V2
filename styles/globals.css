@@ -201,7 +201,37 @@ button {
   }
 }
 
-.icon.icon-link::after {
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* Link icon after autolink headings */
+.autolink-svg {
+  display: inline-block;
+  margin-left: 10px;
+  opacity: 0;
+  transition: 200ms ease;
+}
+
+h2:hover .autolink-svg,
+h3:hover .autolink-svg,
+h4:hover .autolink-svg,
+h5:hover .autolink-svg,
+h6:hover .autolink-svg {
+  opacity: 1 !important;
+}
+
+/* hastag after autolink headings instead of link icon */
+
+/* .icon.icon-link::after {
   content: "#";
   color: var(--clr-link) !important;
   opacity: 0;
@@ -210,15 +240,15 @@ button {
   opacity: 0;
   font-weight: 400;
   transition: all 200ms ease;
-}
+} */
 
-h2:hover > * > span::after,
+/* h2:hover > * > span::after,
 h3:hover > * > span::after,
 h4:hover > * > span::after,
 h5:hover > * > span::after,
 h6:hover > * > span::after {
   opacity: 1 !important;
-}
+} */
 
 /* rehype table of content */
 nav.toc {

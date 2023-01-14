@@ -1,0 +1,134 @@
+---
+title: "Introducing Guess A card: A simple browser game 
+built with vanilla JavaScript, html and css. "
+date: "2023-01-13"
+tags: ["javascript", "html", "css"]
+
+metadata: {
+  isPublished: true,
+  isFeatured: false,
+  lastUpdated: null,
+}
+
+summary: "Guess A card is a simple JavaScript game I built 
+during my introductory phase to the JavaScript language. 
+I recently rebuilt the game from scratch using better coding 
+principles. This article highlights the idea behind the game 
+as well as the journey from version 1 to version 2 and what 
+I learned along the way."
+---
+
+<Group>
+
+## Introduction
+
+Hi, my name is Jesse Ajioh and I'm a front end developer for the web.
+At the time of writing this article, I've had about one year of experience
+programing with Javascript. I build web apps with Javascript frameworks such
+as React and Next.js which I deploy to either Netlify or Vercel.
+
+It was during one of such deployments to Netlify that I observed a cool
+game that the Netlify dashboard allows you to play while waiting for your site
+to be deployed. It is a simple card pairing game. You open a card and
+try to guess the corresponding card from from the unopened ones. You do this
+until all cards are open. The least amount of guesses it takes to open all
+the cards is your high score.
+
+Since I just began learning JavaScript and was eager for new challenges, I decided
+to build such a game myself.
+
+## About the game
+
+The current version of Guess A Card game at it's core, features similar
+functionality to the Netlify game. A player is tasked with pairing up selected
+cards until all cards are opened. The game however offers an extended set of
+functionality such as:
+
+### Sneaks
+
+Sneaking is a feature which offers the player an opportunity to briefly observe
+the arrangement of all the cards. It is left to the player to memorize this
+arrangement within that short time so as to correctly pair up each card and
+win the game. A player can only sneak a look at the cards a fixed number of
+time for every game round.
+
+### Limited attempts
+
+The game offers only a limited number of attempts after which if all cards are
+not open, the game is lost. This deviates significantly from Netlify's version
+which gives you unlimited attempts to play.
+
+### Sound effects
+
+Upon building my initial version of the game, I decided to spice things up a bit
+by adding sound effects. This makes the game a lot more interesting
+and fun to play. The latest version of the game website features a button for toggling sound effects
+on or off depending on the players choice. The choice is persisted in local storage
+for future visits.
+
+<InfoText>
+  Because this was my first time working with sound in JavaScript, I naturally
+  did some research to figure out how to go about it. It turned out that using
+  the Web Audio API for this reason wasn't all that difficult.
+</InfoText>
+
+## Version 1
+
+It took me a few days to finish my first version of the game. Prior to commencing,
+I had failed to sketch out a plan of what I wanted to do and how I intended to do it.
+As a result, I had to create game logic on the fly and employ a few gimmicks to get
+things to operate the way I wanted. In the end, my code worked, but I'm not proud of
+how it was constructed. In fact, when I returned to the project a few months later,
+I had a difficult time figuring out my own code.😅😅.
+
+In as much as I utilized comments and also tried to extract reusable commands into separate
+functions, I ended up with a bunch of nested if-else statements which definitely did not make
+the code easier to understand later on.
+
+- <ExternalLink href="https://github.com/ajiohjesse/guess-a-card-V1">
+    v1 GitHub repository
+  </ExternalLink>
+- <ExternalLink href="https://guess-a-card-v1.vercel.app">
+    v1 Game website
+  </ExternalLink>
+
+<Image
+  src="https://res.cloudinary.com/rehxmedia/image/upload/v1673654210/Jesse%20Ajioh%20Blog/guess-a-card-v1_kj6yn6.png"
+  alt="Version 1 code"
+/>
+
+## Version 2
+
+Rather than attempt to untangle the code in version 1, I opted to create a new
+version of the game while retaining the old one for comparison and historical purposes.
+
+For some reason, I expected the new version to have less lines of code,
+but the result proved me wrong. Version 1 contained 306 lines of code,
+whereas version 2 has 414 lines of code. This is because I used more functions
+in version 2 (31 functions) than I used in version 1 (16 functions).
+Version 2 also includes more comments that clarify crucial aspects of the game's
+functionality. Overall, the second version has a more ordered code structure
+that is easier to maintain.
+
+<Image
+  src="https://res.cloudinary.com/rehxmedia/image/upload/v1673654209/Jesse%20Ajioh%20Blog/guess-a-card-v2_blnyzu.png"
+  alt="Version 2 code"
+/>
+
+- <ExternalLink href="https://github.com/ajiohjesse/guess-a-card-V2">
+    v2 GitHub repository
+  </ExternalLink>
+- <ExternalLink href="https://guess-a-card-v2.vercel.app">
+    v2 Game website
+  </ExternalLink>
+
+## Conclusion
+
+In conclusion, I'd say that this small endeavor taught me a lot. It taught me to be
+more organized while writing code, to use clear and easy to understand names for variables and functions,
+and to value space and comments in making code easier to read later on. This project may not seem
+like much but it's my very first attempt at developing an idea from scratch into a product that actually
+meets the requirements for which it was created. I look foward to building more javascript projects
+and to documenting every step of the journey.
+
+</Group>

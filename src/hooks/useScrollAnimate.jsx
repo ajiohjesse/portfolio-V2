@@ -9,9 +9,10 @@ const useScrollAnimate = (className, intro) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add(intro)
-          } else {
-            entry.target.classList.remove(intro)
-          }
+          } 
+          // else {
+          //   entry.target.classList.remove(intro)
+          // }
         })
       },
       { threshold: 0.5 },

@@ -1,36 +1,9 @@
-import Container from '@components/container/Container'
-import TitleHeading from '@components/titleHeading/TitleHeading'
-import styles from './latestPosts.module.css'
-import PostCard from './PostCard'
+import Container from "@components/container/Container";
+import TitleHeading from "@components/titleHeading/TitleHeading";
+import styles from "./latestPosts.module.css";
+import PostCard from "./PostCard";
 
-export const posts = [
-  {
-    title: 'Introduction to web developement',
-    text: `Lorem ipsum, dolor sit amet consectetur
-     adipisicing elit. Officia, deleniti exercitationem
-      consequuntur quaerat cum...`,
-  },
-  {
-    title: 'Getting started with next.js',
-    text: `Lorem ipsum, dolor sit amet consectetur
-     adipisicing elit. Officia, deleniti exercitationem
-      consequuntur quaerat cum, soluta dolore omnis...`,
-  },
-  {
-    title: 'Introduction to web developement',
-    text: `Lorem ipsum, dolor sit amet consectetur
-     adipisicing elit. Officia, deleniti exercitationem
-      consequuntur quaerat cum...`,
-  },
-  {
-    title: 'Getting started with next.js',
-    text: `Lorem ipsum, dolor sit amet consectetur
-     adipisicing elit. Officia, deleniti exercitationem
-      consequuntur quaerat cum, soluta dolore omnis...`,
-  },
-]
-
-const LatestPosts = () => {
+const LatestPosts = ({ posts }) => {
   return (
     <section className={styles.latestPosts}>
       <Container>
@@ -42,7 +15,7 @@ const LatestPosts = () => {
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default LatestPosts
+export default LatestPosts;
