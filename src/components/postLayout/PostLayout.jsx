@@ -1,13 +1,13 @@
-import Container from '@components/container/Container'
-import styles from './postLayout.module.css'
-import moment from 'moment'
-import useScrollAnimate from '@hooks/useScrollAnimate'
-import { FiCalendar, FiClock } from 'react-icons/fi'
-import { cl } from '@utils/classNames'
-import SEO from '@components/SEO'
+import Container from '@components/container/Container';
+import styles from './postLayout.module.css';
+import moment from 'moment';
+import useScrollAnimate from '@hooks/useScrollAnimate';
+import { FiCalendar, FiClock } from 'react-icons/fi';
+import { cl } from '@utils/classNames';
+import SEO from '@components/SEO';
 
 const PostLayout = ({ children, frontMatter }) => {
-  useScrollAnimate('scale', 'scale-in')
+  useScrollAnimate('scale', 'scale-in');
 
   return (
     <>
@@ -15,6 +15,9 @@ const PostLayout = ({ children, frontMatter }) => {
         title={frontMatter.title}
         description={frontMatter.summary}
         canonicalPath={`/blog/${frontMatter.slug}`}
+        published={frontMatter.date}
+        slug={frontMatter.slug}
+        type="post"
       />
       <main>
         <article>
@@ -35,17 +38,22 @@ const PostLayout = ({ children, frontMatter }) => {
               <div className={styles.metadata}>
                 <p className="scale">
                   <FiCalendar aria-hidden />
-                  Published {moment(frontMatter.date).format('DD MMMM, YYYY')}
+                  Published{' '}
+                  {moment(frontMatter.date).format(
+                    'DD MMMM, YYYY'
+                  )}
                 </p>
 
                 {!frontMatter.metadata.lastUpdated ||
-                frontMatter.date === frontMatter.metadata.lastUpdated ? null : (
+                frontMatter.date ===
+                  frontMatter.metadata
+                    .lastUpdated ? null : (
                   <p className="scale">
                     <FiCalendar aria-hidden />
                     Updated{' '}
-                    {moment(frontMatter.metadata.lastUpdated).format(
-                      'DD MMMM, YYYY',
-                    )}
+                    {moment(
+                      frontMatter.metadata.lastUpdated
+                    ).format('DD MMMM, YYYY')}
                   </p>
                 )}
 
@@ -63,13 +71,15 @@ const PostLayout = ({ children, frontMatter }) => {
 
           <div className={styles.postContent}>
             <Container>
-              <div className={styles.contentWrapper}>{children}</div>
+              <div className={styles.contentWrapper}>
+                {children}
+              </div>
             </Container>
           </div>
         </article>
       </main>
     </>
-  )
-}
+  );
+};
 
-export default PostLayout
+export default PostLayout;
