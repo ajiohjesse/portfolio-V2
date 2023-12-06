@@ -24,5 +24,7 @@ export const projects = [
     title: 'Incognito',
     text: `Incognito is a special app where you can chat anonymously 
     and have some fun with your friends. Built with Next.js 14 and MongoDB.`,
+    website: 'https://incognito-message.vercel.app/',
+    github: 'https://github.com/ajiohjesse/incognito',
   },
 ];
