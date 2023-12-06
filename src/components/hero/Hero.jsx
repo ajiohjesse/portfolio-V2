@@ -1,12 +1,12 @@
-import Container from '@components/container/Container'
-import styles from './hero.module.css'
-import heroImg from '@public/images/hero-img.png'
-import Image from 'next/image'
-import { cl } from '@utils/classNames'
-import { useRouter } from 'next/router'
+import Container from '@components/container/Container';
+import styles from './hero.module.css';
+import heroImg from '@public/images/hero-img.png';
+import Image from 'next/image';
+import { cl } from '@utils/classNames';
+import { useRouter } from 'next/router';
 
 const Hero = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <section className={styles.hero}>
@@ -39,7 +39,7 @@ const Hero = () => {
           <div className={cl(styles.card, 'slide-left')}>
             <p>
               <span className={styles.number}>
-                1<span className={styles.primary}>&#43;</span>
+                2<span className={styles.primary}>&#43;</span>
               </span>
               <span className={styles.desc}>
                 <span>years</span>
@@ -51,7 +51,7 @@ const Hero = () => {
           <div className={cl(styles.card, 'slide-right')}>
             <p>
               <span className={styles.number}>
-                10<span className={styles.primary}>&#43;</span>
+                5<span className={styles.primary}>&#43;</span>
               </span>
               <span className={styles.desc}>
                 <span>projects</span>
@@ -62,7 +62,7 @@ const Hero = () => {
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
